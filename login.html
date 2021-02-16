@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container2">
+            <div class="icon">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="header">
+                <p>
+                    User Login
+                </p>
+            </div>
+            <div class="login">
+                <input type="text" id="user" placeholder="Username" pattern="[a-zA-Z]" required />
+            </div>
+            <div id="bad_username"></div>
+            <div class="login">
+                <input type="text" id="pass" placeholder="Password" pattern="^(?=.*[a-zA-Z\d].*)[a-zA-Z\d!@#$%&*]{7,}$"
+                    required />
+            </div>
+            <div id="bad_password"></div>
+            <div class="button">
+                <button type="button" id="login_button">LOGIN</button>
+            </div>
+            <div class="pwd_recovery">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

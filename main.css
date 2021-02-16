@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.container1 {
+    background-color: #3d38527c;
+    width: 100%;
+    height: 100vh;
+}
+
+.container2 {
+    text-align: center;
+    background-color: #E8E8E8;
+    width: 30rem;
+    padding: 3rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px #0b0013;
+    font-size: 2rem;
+}
+
+.container3 {
+    text-align: center;
+    background-color: #E8E8E8;
+    width: 60%;
+    height: 60%;
+    padding: 3rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px #0b0013;
+    font-size: 2rem;
+}
+
+.container2 div {
+    margin-bottom: 3rem;
+}
+
+button {
+    padding: 1rem 4.78rem;
+    background-color: #56C9E4;
+    border-style: hidden;
+    color: #EDEDED;
+    font-size: 1.8rem;
+}
+
+.login {
+    color: #717171;
+}
+
+input {
+    text-align: center;
+    background-color: #D3D3D3;
+    padding: 1rem 0.7rem;
+    border-style: hidden;
+    font-size: 1.3rem;
+}
+
+button:active {
+    background: #72CEE4;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+
+.pwd_recovery {
+    font-size: 1rem;
+    color: rgb(255, 102, 102)
+}
+
+#bad_password{
+    color: red;
+    font-size: 0.8rem;
+}
+
+#bad_username{
+    color:red;
+    font-size: 0.8rem;
+}
+
+.centered {
+    text-align: center;
+    background-color: grey;
+}
+
+.padded {
+    margin: 2rem;
+}
+
+.big {
+    padding: 1rem;
+}
+
+.large_font{
+    font-size: 2rem;
+}
+
+.links a{
+    margin: 1rem;
+}
+
+body {
+}
+
+.quick_background {
+    background-color: #444d6ba9;
+}

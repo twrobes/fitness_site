@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body style="background-color: #444d6ba9;">
+    <div class="centered container1">
+        <div class="container">
+            <div class="row padded">
+                <div class="col">
+                    <!-- NAVIGATION BAR -->
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Welcome!</a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./login.html">Login<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./feedback.html">Give us feedback!</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Go To</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="#info_form">Statistics</a>
+                                        <a class="dropdown-item" href="#websites">Resources</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+
+            <!-- PERSONAL INFO -->
+            <div class="row padded">
+                <div class="col" id="info_form">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" style="font-size: 1.5rem;">Full Name</label>
+                            <input class="form-control" id="name" placeholder="Enter Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" style="font-size: 1.5rem;">Sex</label>
+                            <select class="form-control" id="sex">
+                                <option>Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" style="font-size: 1.5rem;">Weight</label>
+                            <input id="weight" type="text" class="form-control" placeholder="Weight (lbs)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" style="font-size: 1.5rem;">Age</label>
+                            <input id="age" type="text" class="form-control" placeholder="Age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" style="font-size: 1.5rem;">Height</label>
+                            <input id="height" type="text" class="form-control" placeholder="Height in inches" required>
+                        </div>
+                        <button id="calculate" type="submit" class="btn btn-primary">Calculate</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Metric</th>
+                                <th>Your Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Body Mass Index</td>
+                                <td id="bmi"></td>
+                            </tr>
+                            <tr>
+                                <td>Body Fat Percentage</td>
+                                <td id="bfp"></td>
+                            </tr>
+                            <tr>
+                                <td>Calories Burned Each Day</td>
+                                <td id="calories"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- WEBSITE LINKS-->
+            <div class="row padded">
+                <h1 id="websites">Health and Fitness Resources</h1>
+            </div>
+            <div class="row padded"></div>
+                <div class="col"><figure class="figure">
+                        <img src="https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Fitness/Galleries/10+Fitness+Tips/Muscle-confusion-is-the-only-way-to-go..jpg" class="figure-img img-fluid rounded" alt="">
+                        <figcaption class="figure-caption text-xs-right"></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row padded">
+                <div class="col padded">
+                    <div class="links" id="sites_1" col>
+                        
+                    </div>
+                    <div class="links" id="sites_2" col>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row padded">
+                <div class="col padded">
+                    <h1 class="large_font">Check out this video to get started on your fitness journey!</h1>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IGhQtwzfmXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
